@@ -225,3 +225,9 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-text-mainHeaderTwo{
     color:#c11d4e!important;
 }
+
+.w3-ownJumbo{
+    font-size:65px!important;
+    font-family: cursive;
+    font-style: italic;
+}
