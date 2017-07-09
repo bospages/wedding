@@ -219,7 +219,9 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-border-grey,.w3-hover-border-grey:hover,.w3-border-gray,.w3-hover-border-gray:hover{border-color:#bbb!important}
 
 .w3-text-mainHeader{
+    color:#3f0c38!important;
+}
 
-color:#3f0c38!important;
-
+.w3-text-mainHeaderTwo{
+    color:#c11d4e!important;
 }
