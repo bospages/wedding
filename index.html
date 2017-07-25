@@ -1,131 +1,134 @@
+
 <!DOCTYPE html>
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Pierre Tasmin Wedding</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="w3.css">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title></title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
 
 <style>
-body,h1,h2{font-family: "Raleway", sans-serif}
-body, html {height: 100%}
-p {line-height: 2}
-.bgimg, .bgimg2 {
-    min-height: 100%;
-    background-position: center;
-    background-size: cover;
+
+body {
+	
+	background-image: url('grunge_patterns.jpg');
+	background-attachment: fixed;
+	color: #333;
 }
-.bgimg {background-image: url(img/rusticHearts.jpg)}
-.bgimg2 {background-image: url(img/ramkikiWilge.jpg)}
-.bgimg2 {background-image: url(img/ramkikiWilge.jpg)}
+
+.box {
+	border-radius: 3px;
+	background: rgba(101, 101, 101, 0.7); margin: auto; padding: 12px;
+}
+
+.lightbox {
+	zoom: 1.5;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(10, 10, 10, 0.8);
+	text-align: center;
+	margin: auto;
+	
+}
+
+div.horizontal {
+	display: flex;
+	justify-content: center;
+	height: 100%;
+}
+
+div.vertical {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+}
+
+::-webkit-input-placeholder {
+   color: #955;
+   text-align: center;
+}
+
+::-moz-placeholder {  
+   color: #955;
+   text-align: center;
+}
+
+:-ms-input-placeholder {  
+   color: #955;
+   text-align: center;
+}
+
 </style>
-</head><body>
 
-<!-- Header / Home-->
-<header class="w3-display-container w3-wide bgimg w3-grayscale-min" id="home">
-  <div class="w3-display-middle w3-text-mainHeader w3-center">
-    <h1 class="w3-ownJumbo">Pierré &amp; Tasmin</h1>
-    <h2 style="">Are getting married</h2>
-    <h3>2017-09-23</h3>
-  </div>
-</header>
+<body>
+	
+	<div id="loginbox" class="lightbox" >
+		<div class="horizontal">
+			<div class="vertical">
+				<div class="box">				
+					<input style="margin: 16px; text-align: center;" id="password" type="password" placeholder="password" /> <br />
+					<button id="loginbutton" type="button">Enter</button>
+					<p id="wrongPassword" style="display: none">wrong password</p>
+				</div>
+			</div>
+		</div>
+	</div>
 
-<!-- Navbar (sticky bottom) -->
-<div class="w3-bottom w3-hide-small">
-  <div class="w3-bar w3-white w3-center w3-padding w3-opacity-min w3-hover-opacity-off">
-    <a href="index.html#home" style="width:25%" class="w3-bar-item w3-button">Home</a>
-    <a href="index.html#us" style="width:25%" class="w3-bar-item w3-button">Pierré &amp; Tasmin</a>
-    <a href="index.html#wedding" style="width:25%" class="w3-bar-item w3-button">Wedding</a>
-    <a href="index.html#rsvp" style="width:25%" class="w3-bar-item w3-button w3-hover-black">RSVP</a>
-  </div>
-</div>
 
-<!-- About -->
-<div class="w3-container w3-padding-64 w3-pale-red" id="us">
-  <div class="w3-content">
-    <h1 class="w3-center w3-text-grey"><b>Pierré &amp; Tasmin</b></h1>
-    <img class="w3-round" src="img/collage.jpg" style="width:100%;margin:32px 0">
-    <p><i>A Little Piece About Us
-        <br/><br/>We met in December 2013 at Magalies Park. There was an immediate chemistry between us. Needless to say, a few nervous dates followed in the weeks to come. And so our story began… In the month of October 2014 we had our first trip together to the Kruger National Park. Which since then, after many repeat visits, has become our "Special Place".
-        <br/><br/>Pierré: “It was on one of these visits that I decided to surprise Tasmin by taking us to the Pafuri Private Game Lodge. Little did she know, that this was not the only surprise that I had planned for this trip…”
-        <br/><br/>Tasmin: “We had just come back from an amazing early morning game drive. We were sitting alone on the deck, staring out over the vast bush with only the sounds of a few zebra’s grazing at the river bank below. For those of you that know Pierré well, you will know that he is a man of few words when it comes to his deepest feelings. However, at this very moment he shared all that was in his heart. I won’t ever forget the moment when Pierré got down on one knee and asked me to marry him. Needless to say, I said YES a number of times!”
-        <br/><br/>We are both very happy and excited for you to share our special day with us!
-    </i>
-    </p><br>
-    <p class="w3-center"><a href="index.html#wedding" class="w3-button w3-black w3-round w3-padding-large w3-large">Wedding Details</a></p>
-  </div>
-</div>
 
-<!-- Background photo -->
-<div class="w3-display-container bgimg2">
-  <div class="w3-display-middle w3-text-mainHeaderTwo w3-center">
-    <h1 class="w3-ownJumbo"></h1><br>
-  </div>
-</div>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+	 
 
-<!-- Wedding information -->
-<div class="w3-container w3-padding-64 w3-pale-red w3-center" id="wedding">
-  <div class="w3-content">
-    <h1 class="w3-text-grey"><b>THE WEDDING</b></h1>
-    <img class="w3-round-large" src="img/chapel.jpg" style="width:100%;margin:64px 0">
-    <div class="w3-row">
-      <div class="w3-half">
-        <h2>When</h2>
-        <p>Wedding Ceremony - 3:30pm for 4:00pm</p>
-        <p>Reception to follow </p>
-      </div>
-      <div class="w3-half">
-        <h2>Where</h2>
-        <p>Ramkiki, 35 Peter Rd</p>
-        <p>Ruimsig, Roodepoort</p>
-      </div>
-    </div>
-  </div>
-</div>
+	 <script type="text/javascript" src="https://cdn.rawgit.com/chrisveness/crypto/master/sha1.js"></script>
 
-<!-- Gifts section -->
-<div class="w3-container w3-padding-64 w3-pale-red w3-center w3-wide" id="gift_section">
-  <h1>Gifts</h1>
-  <p class="w3-large">A monetary contribution towards planning our future would be greatly appreciated.</p>
-</div>
+	<script type="text/javascript">
+	"use strict";
 
-<!-- RSVP section -->
-<div class="w3-container w3-padding-64 w3-pale-red w3-center w3-wide" id="rsvp">
-  <div style="display:none;" id="thankyou_message">
-    <h2><em>Thank you</em> for your rsvp!</h2>
-  </div>
-  <h1>HOPE YOU CAN MAKE IT!</h1>
-  <p class="w3-large">Kindly Respond By 18 August, 2017</p>
-  <p class="w3-xlarge">
-    <button onclick="document.getElementById(&#39;id01&#39;).style.display=&#39;block&#39;" class="w3-button w3-round w3-red w3-opacity w3-hover-opacity-off" style="padding:8px 60px">Click Here to RSVP</button>
-  </p>
-  <p class="w3-large">or via SMS/WhatsApp
-  <br/>Tasmin 071 642 5788
-  <br/>Pierré 082 490 7922</p>
-</div>
 
-<!-- RSVP modal -->
-<div id="id01" class="w3-modal" style="display: none;">
-  <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="padding:32px;max-width:600px">
-    <div class="w3-container w3-white w3-center">
+	function loadPage(pwd) {
+		
+		var hash= pwd;
+		hash= Sha1.hash(pwd);
+		var url= hash + "/index.html";
+			
+		$.ajax({
+			url : url,
+			dataType : "html",
+			success : function(data) {
 
-      <form id="gform" action="https://script.google.com/macros/s/AKfycbw-EuXtw8tsyMi69enzfUfT1CPjwgsKkwTCX5o5lBmMt_jEzTFA/exec" method="post">
-        <h1 class="w3-wide">CAN YOU COME?</h1>
-        <p>We really hope you can make it.</p>
-        <input class="w3-input w3-border" type="text" placeholder="Enter your name(s)" id="name" name="name" required="required" oninvalid="this.setCustomValidity('Please enter your name(s)')" oninput="this.setCustomValidity('')">
-        <input class="w3-input w3-border" type="text" placeholder="Your favourite song(s)" name="song">
-        <input id="buttonClicked" type="hidden"  name="buttonClicked">
-        <p><i>Sincerely, Pierré &amp; Tasmin</i></p>
-        <div class="w3-row">
-          <div class="w3-half">
-            <input onclick="if(document.getElementById(&#39;name&#39;).checkValidity() == false) {return}; document.getElementById(&#39;buttonClicked&#39;).value='Going'; document.getElementById(&#39;id01&#39;).style.display=&#39;none&#39;" type="submit" class="w3-button w3-block w3-green" value="Going"></input>
-          </div>
-          <div class="w3-half">
-            <button onclick="if(document.getElementById(&#39;name&#39;).checkValidity() == false) {return}; document.getElementById(&#39;buttonClicked&#39;).value='Cant come'; document.getElementById(&#39;id01&#39;).style.display=&#39;none&#39;" type="submit" class="w3-button w3-block w3-red">Can't come</button>
-          </div>
-        </div>
-      </form>
+				window.location= url;
 
-    </div>
-  </div>
-</div>
+			},
+			error : function(xhr, ajaxOptions, thrownError) {
+			
 
-<script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
-</body></html>
+				parent.location.hash= hash;
+
+				//$("#wrongPassword").show();
+				$("#password").attr("placeholder","wrong password");
+				$("#password").val("");
+			}
+		});
+	}
+
+	 
+	$("#loginbutton").on("click", function() {
+		loadPage($("#password").val());
+	});
+	$("#password").keypress(function(e) {
+		if (e.which == 13) {
+			
+			loadPage($("#password").val());
+		}
+	});
+	$("#password").focus();
+		
+	</script>
+
+</body>
+</html>
